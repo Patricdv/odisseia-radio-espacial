@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function Mic() {
+  const [casseteOpen, setCasseteOpen] = useState(false);
   const buttonToggle = (e) => {
     e.target.className =
       e.target.className.indexOf("pushed") > -1
@@ -6,11 +9,8 @@ export default function Mic() {
         : "mic-button pushed";
   };
 
-  const casseteOpenClose = (e) => {
-    e.target.className =
-      e.target.className.indexOf("open") > -1
-        ? "cassete-container"
-        : "cassete-container open";
+  const casseteOpenClose = () => {
+    setCasseteOpen(!casseteOpen);
   };
 
   return (
@@ -31,7 +31,7 @@ export default function Mic() {
         </div>
 
         <div className="body-cassete-container">
-          <div className="cassete-desk"></div>
+          <div className="body-cassete-desk"></div>
         </div>
 
         <div className="radio-bottom">
@@ -41,7 +41,11 @@ export default function Mic() {
         </div>
       </div>
 
-      <div className="cassete-container" onClick={casseteOpenClose}>
+      <div
+        className={`cassete-container ${casseteOpen ? "open" : ""}`}
+        onClick={casseteOpenClose}
+      >
+        <div className="cassete-overlay"></div>
         <div className="cassete-desk"></div>
       </div>
     </div>
