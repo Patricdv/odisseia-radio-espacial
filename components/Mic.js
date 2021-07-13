@@ -24,6 +24,12 @@ export default function Mic() {
       <div className="radio-body">
         <div className="orange-body"></div>
 
+        <div className="side-stripes-container">
+          <div className="side-stripes"></div>
+          <div className="side-stripes"></div>
+          <div className="side-stripes"></div>
+        </div>
+
         <div className="body-cassete-container">
           <div className="cassete-desk"></div>
         </div>
