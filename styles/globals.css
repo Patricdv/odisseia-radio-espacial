@@ -129,5 +129,6 @@ a {
 }
 
 .cassete-container.open {
-  transform: rotateX(45deg) skewX(-9deg);
+  transform: rotateX(35deg) skewX(-5deg);
+  background: #a5bcba;
 }
