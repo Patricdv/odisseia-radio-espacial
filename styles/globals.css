@@ -124,9 +124,10 @@ a {
   overflow: hidden;
   z-index: 3;
   transition: all 0.3s;
+  transform-origin: bottom left;
   cursor: hover;
 }
 
 .cassete-container.open {
-  transform: rotateX(45deg) translateY(37px) translateX(14px) skewX(-9deg);
+  transform: rotateX(45deg) skewX(-9deg);
 }
