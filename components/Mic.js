@@ -1,17 +1,24 @@
 export default function Mic() {
-  const toggleClass = (e) => {
+  const buttonToggle = (e) => {
     e.target.className =
       e.target.className.indexOf("pushed") > -1
         ? "mic-button"
         : "mic-button pushed";
   };
 
+  const casseteOpenClose = (e) => {
+    e.target.className =
+      e.target.className.indexOf("open") > -1
+        ? "cassete-container"
+        : "cassete-container open";
+  };
+
   return (
     <div className="mic">
       <div className="button-container">
-        <div className="mic-button" onClick={toggleClass}></div>
-        <div className="mic-button" onClick={toggleClass}></div>
-        <div className="mic-button" onClick={toggleClass}></div>
+        <div className="mic-button" onClick={buttonToggle}></div>
+        <div className="mic-button" onClick={buttonToggle}></div>
+        <div className="mic-button" onClick={buttonToggle}></div>
       </div>
 
       <div className="radio-body">
@@ -28,7 +35,7 @@ export default function Mic() {
         </div>
       </div>
 
-      <div className="cassete-container">
+      <div className="cassete-container" onClick={casseteOpenClose}>
         <div className="cassete-desk"></div>
       </div>
     </div>
