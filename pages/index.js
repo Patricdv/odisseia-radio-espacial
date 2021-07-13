@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Mic from "../components/Mic";
+import { Roberto } from "../components/Roberto";
+import { Cassete } from "../components/Cassete";
 
 export default function Home() {
   return (
@@ -17,10 +19,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Odisseia Rádio-Espacial</h1>
+        <div className={styles.titleContainer}>
+          <h1 className={styles.title}>Odisseia Rádio-Espacial</h1>
+        </div>
 
         <section className={styles.section}>
-          <div>Episodes</div>
+          <div className={styles.casseteContainer}>
+            <Cassete />
+          </div>
 
           <div className={styles.micContainer}>
             <Mic />
@@ -29,10 +35,16 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div className={styles.moon}></div>
-        <div className={styles.crater1}></div>
-        <div className={styles.crater2}></div>
-        <div className={styles.crater3}></div>
+        <div className={styles.walkingContainer}>
+          <Roberto />
+        </div>
+
+        <div className={styles.moonContainer}>
+          <div className={styles.moon}></div>
+          <div className={styles.crater1}></div>
+          <div className={styles.crater2}></div>
+          <div className={styles.crater3}></div>
+        </div>
       </footer>
     </div>
   );

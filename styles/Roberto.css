@@ -1,0 +1,52 @@
+.walking {
+  animation: walking 3s ease-in-out forwards infinite;
+  transform-origin: top;
+}
+.arm-left {
+  animation-delay: -1s;
+}
+
+.arm-right {
+}
+
+.leg-left {
+  animation: walking-leg 1s linear forwards infinite;
+}
+
+.leg-right {
+  animation: walking-leg 1s linear forwards infinite;
+  animation-delay: -0.5s;
+}
+
+@keyframes walking {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(2deg);
+  }
+  75% {
+    transform: rotateZ(-2deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes walking-leg {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  10% {
+    transform: translateY(10px) rotateZ(0.5deg);
+  }
+  25% {
+    transform: rotateZ(1deg);
+  }
+  75% {
+    transform: rotateZ(-2deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
