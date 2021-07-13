@@ -125,7 +125,7 @@ a {
   z-index: 3;
   transition: all 0.3s;
   transform-origin: bottom left;
-  cursor: hover;
+  cursor: pointer;
 }
 
 .cassete-container.open {
