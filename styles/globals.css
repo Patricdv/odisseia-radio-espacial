@@ -183,8 +183,8 @@ a {
 .mic-eyes {
   position: absolute;
   top: 35%;
-  width: 15%;
-  padding-bottom: 15%;
+  width: 12%;
+  padding-bottom: 12%;
   border-radius: 50%;
   background: #3f4a4c;
 }
@@ -199,10 +199,10 @@ a {
 
 .mic-mouth {
   position: absolute;
-  bottom: 30%;
-  left: 35%;
-  width: 30%;
-  padding-top: 10%;
+  bottom: 35%;
+  left: 37%;
+  width: 26%;
+  padding-top: 8%;
   border-radius: 30px;
   background: #797f7f;
 }
