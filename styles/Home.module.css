@@ -95,6 +95,7 @@
 .section {
   display: flex;
   width: 70vw;
+  height: 60vh;
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
