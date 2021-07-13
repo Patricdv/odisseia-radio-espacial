@@ -248,9 +248,9 @@ a {
   color: #3f4a4c;
   font-size: 30px;
   top: -100%;
-  right: 0%;
+  right: -20%;
   opacity: 0;
-  animation: whistle-notes 3s forwards infinite ease-in-out 1.5s;
+  animation: whistle-notes 2s forwards infinite ease-in-out 1.5s;
 }
 
 .whistling::after {
@@ -261,7 +261,7 @@ a {
   font-size: 30px;
   top: -50%;
   right: -50%;
-  animation: whistle-notes 3s forwards infinite ease-in-out;
+  animation: whistle-notes 2s forwards infinite ease-in-out;
 }
 
 @keyframes whistle-notes {
@@ -270,20 +270,18 @@ a {
     opacity: 1;
   }
   30% {
-    transform: translate3d(150%, -80%, 0);
+    transform: translate3d(160%, -60%, 0);
   }
   60% {
-    transform: translate3d(50%, -160%, 0);
-  }
-  80% {
+    transform: translate3d(80%, -120%, 0);
     opacity: 1;
   }
   90% {
-    transform: translate3d(100%, -240%, 0);
+    transform: translate3d(160%, -180%, 0);
     opacity: 0;
   }
   100% {
-    transform: translate3d(100%, -240%, 0);
+    transform: translate3d(100%, -180%, 0);
     opacity: 0;
   }
 }
