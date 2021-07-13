@@ -247,8 +247,9 @@ a {
   content: "♪";
   color: #3f4a4c;
   font-size: 30px;
-  top: 0%;
+  top: -100%;
   right: 0%;
+  opacity: 0;
   animation: whistle-notes 3s forwards infinite ease-in-out 1.5s;
 }
 
@@ -256,8 +257,9 @@ a {
   position: absolute;
   content: "♫";
   color: #3f4a4c;
+  opacity: 0;
   font-size: 30px;
-  top: 0%;
+  top: -50%;
   right: -50%;
   animation: whistle-notes 3s forwards infinite ease-in-out;
 }
