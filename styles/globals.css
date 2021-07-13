@@ -199,10 +199,37 @@ a {
 
 .mic-mouth {
   position: absolute;
+  background: #797f7f;
+}
+
+.smile {
+  bottom: 28%;
+  left: 37%;
+  width: 26%;
+  padding-top: 12%;
+  border-radius: 5px 5px 60px 60px;
+}
+
+.neutral {
   bottom: 35%;
   left: 37%;
   width: 26%;
   padding-top: 8%;
   border-radius: 30px;
-  background: #797f7f;
+}
+
+.sad {
+  bottom: 28%;
+  left: 37%;
+  width: 26%;
+  padding-top: 12%;
+  border-radius: 0;
+}
+
+.scream {
+  bottom: 18%;
+  left: 35%;
+  width: 30%;
+  padding-top: 26%;
+  border-radius: 60px;
 }

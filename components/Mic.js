@@ -1,12 +1,16 @@
 import { useState } from "react";
 
+const faces = ["neutral", "smile", "sad", "scream"];
+
 export default function Mic() {
   const [casseteOpen, setCasseteOpen] = useState(false);
+  const [faceIndex, setFaceIndex] = useState(0);
   const buttonToggle = (e) => {
     e.target.className =
       e.target.className.indexOf("pushed") > -1
         ? "mic-button"
         : "mic-button pushed";
+    setFaceIndex(faceIndex === faces.length ? 0 : faceIndex + 1);
   };
 
   const casseteOpenClose = () => {
@@ -49,7 +53,7 @@ export default function Mic() {
         <div className="cassete-desk">
           <div className="mic-eyes left-eye" />
           <div className="mic-eyes right-eye" />
-          <div className="mic-mouth" />
+          <div className={`mic-mouth ${faces[faceIndex]}`} />
         </div>
       </div>
     </div>
