@@ -233,3 +233,55 @@ a {
   padding-top: 26%;
   border-radius: 60px;
 }
+
+.whistling {
+  bottom: 30%;
+  left: 40%;
+  width: 8%;
+  padding-top: 8%;
+  border-radius: 30px;
+}
+
+.whistling::before {
+  position: absolute;
+  content: "♪";
+  color: #3f4a4c;
+  font-size: 30px;
+  top: 0%;
+  right: 0%;
+  animation: whistle-notes 3s forwards infinite ease-in-out 1.5s;
+}
+
+.whistling::after {
+  position: absolute;
+  content: "♫";
+  color: #3f4a4c;
+  font-size: 30px;
+  top: 0%;
+  right: -50%;
+  animation: whistle-notes 3s forwards infinite ease-in-out;
+}
+
+@keyframes whistle-notes {
+  0% {
+    transform: translate3d(100%, -10%, 0);
+    opacity: 1;
+  }
+  30% {
+    transform: translate3d(150%, -80%, 0);
+  }
+  60% {
+    transform: translate3d(50%, -160%, 0);
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    transform: translate3d(100%, -240%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(100%, -240%, 0);
+    opacity: 0;
+  }
+}

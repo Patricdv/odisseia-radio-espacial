@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const faces = ["neutral", "smile", "sad", "scream"];
+const faces = ["neutral", "smile", "sad", "scream", "whistling"];
 
 export default function Mic() {
   const [casseteOpen, setCasseteOpen] = useState(false);
