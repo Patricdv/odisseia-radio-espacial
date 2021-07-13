@@ -174,7 +174,35 @@ a {
 }
 
 .cassete-desk {
+  position: relative;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mic-eyes {
+  position: absolute;
+  top: 35%;
+  width: 15%;
+  padding-bottom: 15%;
+  border-radius: 50%;
+  background: #3f4a4c;
+}
+
+.left-eye {
+  left: 20%;
+}
+
+.right-eye {
+  right: 20%;
+}
+
+.mic-mouth {
+  position: absolute;
+  bottom: 30%;
+  left: 35%;
+  width: 30%;
+  padding-top: 10%;
+  border-radius: 30px;
+  background: #797f7f;
 }

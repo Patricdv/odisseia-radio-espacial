@@ -46,7 +46,11 @@ export default function Mic() {
         onClick={casseteOpenClose}
       >
         <div className="cassete-overlay"></div>
-        <div className="cassete-desk"></div>
+        <div className="cassete-desk">
+          <div className="mic-eyes left-eye" />
+          <div className="mic-eyes right-eye" />
+          <div className="mic-mouth" />
+        </div>
       </div>
     </div>
   );
