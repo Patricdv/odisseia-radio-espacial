@@ -13,9 +13,12 @@ export default function Mic() {
   ]);
 
   const buttonToggle = (index) => {
-    const newButtonPressed = buttonPressed.map((value, i) =>
-      i === index ? !value : value
-    );
+    const newButtonPressed = [false, false, false, false];
+    newButtonPressed[index] = true;
+    if (index === 3) {
+      newButtonPressed[0] = true;
+    }
+
     setButtonPressed(newButtonPressed);
     setFaceIndex(faceIndex === faces.length ? 0 : faceIndex + 1);
   };
