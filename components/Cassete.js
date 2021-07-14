@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function Cassete() {
+export default function Cassete() {
   const [cassetePlay, setCassetePlay] = useState(false);
   const handleClick = () => {
     setCassetePlay(!cassetePlay);
@@ -11,7 +11,7 @@ export function Cassete() {
       xmlns="http://www.w3.org/2000/svg"
       x="0"
       y="0"
-      height={240}
+      height={250}
       className={`cassete ${cassetePlay ? "cassete-play" : ""}`}
       enableBackground="new 0 0 480 480"
       version="1.1"

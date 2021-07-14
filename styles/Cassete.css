@@ -16,12 +16,12 @@
     transform: translate3d(239px, -200px, 0);
   }
   70% {
-    transform: translate3d(439px, -100px, 0);
+    transform: translate3d(434px, -100px, 0);
   }
   80% {
-    transform: translate3d(439px, -100px, 0) rotateZ(720deg);
+    transform: translate3d(434px, -100px, 0) rotateZ(720deg);
   }
   100% {
-    transform: translate3d(439px, 60px, 0) rotateZ(720deg);
+    transform: translate3d(434px, 52px, 0) rotateZ(720deg);
   }
 }

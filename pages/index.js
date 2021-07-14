@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Mic from "../components/Mic";
-import { Roberto } from "../components/Roberto";
-import { Cassete } from "../components/Cassete";
+import Roberto from "../components/Roberto";
+import Cassete from "../components/Cassete";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
             <Cassete />
           </div>
 
-          <div className={styles.micContainer}>
+          <div className="mic-container">
             <Mic />
           </div>
         </section>

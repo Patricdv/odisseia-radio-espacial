@@ -144,6 +144,7 @@
 .micContainer {
   width: 380px;
   height: 250px;
+  /* padding-top: 70%; */
 }
 
 .footer {
