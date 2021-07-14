@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import Mic from "../../components/Mic";
 import Roberto from "../../components/Roberto";
 import Cassete from "../../components/Cassete";
