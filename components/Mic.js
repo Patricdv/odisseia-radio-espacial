@@ -15,8 +15,8 @@ export default function Mic() {
   const buttonToggle = (index) => {
     const newButtonPressed = [false, false, false, false];
     newButtonPressed[index] = true;
-    if (index === 3) {
-      newButtonPressed[0] = true;
+    if (index === 0) {
+      newButtonPressed[1] = true;
     }
 
     setButtonPressed(newButtonPressed);
@@ -31,7 +31,7 @@ export default function Mic() {
     <div className="mic">
       <div className="button-container">
         <div
-          className={`mic-button gray-button ${
+          className={`mic-button red-button ${
             buttonPressed[0] ? "pressed" : ""
           }`}
           onClick={() => buttonToggle(0)}
@@ -49,7 +49,7 @@ export default function Mic() {
           onClick={() => buttonToggle(2)}
         ></div>
         <div
-          className={`mic-button red-button ${
+          className={`mic-button gray-button ${
             buttonPressed[3] ? "pressed" : ""
           }`}
           onClick={() => buttonToggle(3)}
