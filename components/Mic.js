@@ -14,9 +14,9 @@ export default function Mic() {
 
   const buttonToggle = (index) => {
     const newButtonPressed = [false, false, false, false];
-    newButtonPressed[index] = true;
+    newButtonPressed[index] = !buttonPressed[index];
     if (index === 0) {
-      newButtonPressed[1] = true;
+      newButtonPressed[1] = newButtonPressed[0];
     }
 
     setButtonPressed(newButtonPressed);
