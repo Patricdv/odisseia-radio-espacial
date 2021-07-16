@@ -32,26 +32,13 @@ export default function Home() {
             <CasseteCase />
           </div>
 
-          {/* 
-          <div className={styles.casseteContainer}>
-            <div className="cassete-case">S01A E01 - O Mundo da Lua</div>
-            <div className="cassete-case">S01A E02 - A Estrofe Perdida</div>
-            <div className="cassete-case">S01A E03 - Pink Floyd</div>
-            <div className="cassete-case">S01A E04 - O Dragão e o Jorge</div>
-            <div className="cassete-case">S01A E05 - Um Lunático Fim</div>
-          </div>
-          
-          <div className={styles.casseteContainer}>
-            <Cassete />
-          </div> */}
-
           <div className="mic-container">
             <Mic />
           </div>
         </section>
       </main>
 
-      {/* <footer className={styles.footer}>
+      <footer className={styles.footer}>
         <div className={styles.walkingContainer}>
           <Roberto />
         </div>
@@ -65,7 +52,7 @@ export default function Home() {
           <div className="crater crater-5"></div>
           <div className="crater crater-6"></div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
