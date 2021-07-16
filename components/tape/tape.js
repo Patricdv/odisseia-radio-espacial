@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-export default function Cassete() {
-  const [cassetePlay, setCassetePlay] = useState(false);
+export default function Tape() {
+  const [tapePlay, setTapePlay] = useState(false);
   const handleClick = () => {
-    setCassetePlay(!cassetePlay);
+    setTapePlay(!tapePlay);
   };
 
   return (
@@ -12,7 +12,7 @@ export default function Cassete() {
       x="0"
       y="0"
       height={250}
-      className={`cassete ${cassetePlay ? "cassete-play" : ""}`}
+      className={`cassete ${tapePlay ? "cassete-play" : ""}`}
       enableBackground="new 0 0 480 480"
       version="1.1"
       viewBox="0 0 480 480"

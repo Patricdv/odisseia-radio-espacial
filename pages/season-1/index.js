@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
-import Mic from "../../components/Mic";
-import Roberto from "../../components/Roberto";
-import Cassete from "../../components/Cassete";
+import Mic from "../../components/mic";
+import Roberto from "../../components/roberto/roberto";
+import Cassete from "../../components/cassete/cassete";
 
 export default function Season1() {
   return (

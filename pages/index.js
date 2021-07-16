@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Mic from "../components/Mic";
-import Roberto from "../components/Roberto";
-import Cassete from "../components/Cassete";
+import Mic from "../components/mic";
+import Roberto from "../components/roberto/roberto";
+import CasseteCase from "../components/cassete-case/cassete-case";
 
 export default function Home() {
   return (
@@ -17,9 +17,9 @@ export default function Home() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&amp;family=Homemade+Apple&amp;family=Rowdies:wght@700&amp;display=swap"
           rel="stylesheet"
-        />
+        ></link>
       </Head>
 
       <main className={styles.main}>
@@ -28,9 +28,22 @@ export default function Home() {
         </div>
 
         <section className={styles.section}>
+          <div className={styles.casseteCaseContainer}>
+            <CasseteCase />
+          </div>
+
+          {/* 
+          <div className={styles.casseteContainer}>
+            <div className="cassete-case">S01A E01 - O Mundo da Lua</div>
+            <div className="cassete-case">S01A E02 - A Estrofe Perdida</div>
+            <div className="cassete-case">S01A E03 - Pink Floyd</div>
+            <div className="cassete-case">S01A E04 - O Dragão e o Jorge</div>
+            <div className="cassete-case">S01A E05 - Um Lunático Fim</div>
+          </div>
+          
           <div className={styles.casseteContainer}>
             <Cassete />
-          </div>
+          </div> */}
 
           <div className="mic-container">
             <Mic />
@@ -38,18 +51,21 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <div className={styles.walkingContainer}>
           <Roberto />
         </div>
 
         <div className={styles.moonContainer}>
-          <div className={styles.moon}></div>
-          <div className={styles.crater1}></div>
-          <div className={styles.crater2}></div>
-          <div className={styles.crater3}></div>
+          <div className="moon"></div>
+          <div className="crater crater-1"></div>
+          <div className="crater crater-2"></div>
+          <div className="crater crater-3"></div>
+          <div className="crater crater-4"></div>
+          <div className="crater crater-5"></div>
+          <div className="crater crater-6"></div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

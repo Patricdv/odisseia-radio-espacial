@@ -1,0 +1,73 @@
+.cassete-case {
+  position: relative;
+  width: 178px;
+  height: 255px;
+}
+
+.case-cover,
+.case-cover-back {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: calc(100% - 6px);
+  height: 100%;
+  background-image: url(https://i.stack.imgur.com/9TQsy.png);
+  background-size: cover;
+  border: 2px solid rgba(110, 110, 110, 0.2);
+  border-left: 8px solid rgba(110, 110, 110, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.case-cover {
+  backface-visibility: hidden;
+  z-index: 5;
+}
+
+.case-cover-back {
+  z-index: 4;
+}
+
+.case-cover.open,
+.case-cover-back.open {
+  transform: rotateY(120deg);
+}
+
+.case-title {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: #2c303a;
+  z-index: 1;
+  font-family: "Homemade Apple", cursive;
+  transform: rotate(-5deg);
+  font-size: 16px;
+}
+
+.back-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.stack.imgur.com/9TQsy.png);
+  background-size: cover;
+  border: 2px solid rgba(110, 110, 110, 0.2);
+  border-left: 8px solid rgba(110, 110, 110, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.tape-container {
+  position: absolute;
+  top: 2px;
+  left: -34px;
+  width: 250px;
+  height: 250px;
+  z-index: 4;
+}

@@ -28,7 +28,7 @@ export default function Mic() {
   };
 
   return (
-    <div className="mic">
+    <div className={`mic ${faces[faceIndex]}`}>
       <div className="button-container">
         <div
           className={`mic-button red-button ${
@@ -84,7 +84,7 @@ export default function Mic() {
         <div className="cassete-desk">
           <div className="mic-eyes left-eye" />
           <div className="mic-eyes right-eye" />
-          <div className={`mic-mouth ${faces[faceIndex]}`} />
+          <div className="mic-mouth" />
         </div>
       </div>
     </div>

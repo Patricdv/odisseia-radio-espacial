@@ -18,7 +18,7 @@
 .button-container {
   height: 6%;
   width: 100%;
-  padding: 0 5%;
+  padding: 0 4% 0 8%;
   display: flex;
   align-items: flex-start;
   overflow: hidden;
@@ -196,7 +196,7 @@
   background: #797f7f;
 }
 
-.smile {
+.smile .mic-mouth {
   bottom: 30%;
   left: 38%;
   width: 24%;
@@ -204,7 +204,7 @@
   border-radius: 13px 13px 60px 60px;
 }
 
-.talk {
+.talk .mic-mouth {
   bottom: 30%;
   left: 38%;
   width: 14%;
@@ -213,7 +213,7 @@
   animation: talking-mouth 2s forwards infinite ease-in-out;
 }
 
-.neutral {
+.neutral .mic-mouth {
   bottom: 35%;
   left: 37%;
   width: 26%;
@@ -221,7 +221,7 @@
   border-radius: 30px;
 }
 
-.sad {
+.sad .mic-mouth {
   bottom: 28%;
   left: 37%;
   width: 26%;
@@ -230,14 +230,18 @@
 }
 
 .scream {
-  bottom: 18%;
-  left: 35%;
-  width: 30%;
-  padding-top: 26%;
+  animation: mic-shake 4s forwards infinite ease-in-out;
+  transform-origin: center;
+}
+.scream .mic-mouth {
+  bottom: 20%;
+  left: 38%;
+  width: 22%;
+  padding-top: 22%;
   border-radius: 60px;
 }
 
-.whistling {
+.whistling .mic-mouth {
   bottom: 30%;
   left: 40%;
   width: 8%;
@@ -246,7 +250,7 @@
   animation: whistling-mouth 3s forwards infinite ease-in-out;
 }
 
-.whistling::before {
+.whistling .mic-mouth::before {
   position: absolute;
   content: "♪";
   color: #3f4a4c;
@@ -257,7 +261,7 @@
   animation: whistle-notes 2s forwards infinite ease-in-out 1.5s;
 }
 
-.whistling::after {
+.whistling .mic-mouth::after {
   position: absolute;
   content: "♫";
   color: #3f4a4c;
@@ -266,6 +270,35 @@
   top: -50%;
   right: -50%;
   animation: whistle-notes 2s forwards infinite ease-in-out;
+}
+
+@keyframes mic-shake {
+  0% {
+    transform: rotateZ(2deg);
+  }
+  1% {
+    transform: rotateZ(-2deg);
+  }
+  3% {
+    transform: rotateZ(2deg);
+  }
+  5% {
+    transform: rotateZ(-2deg);
+  }
+  7% {
+    transform: rotateZ(2deg);
+  }
+  9% {
+    transform: rotateZ(-2deg);
+  }
+  11% {
+    transform: rotateZ(2deg);
+  }
+  12% {
+    transform: rotateZ(0);
+  }
+  100% {
+  }
 }
 
 @keyframes whistling-mouth {
