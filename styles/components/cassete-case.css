@@ -3,6 +3,17 @@
   width: 178px;
   height: 255px;
 }
+.cassete-case::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-right: 2px solid rgba(110, 110, 110, 0.2);
+  z-index: 5;
+}
 
 .case-cover,
 .case-cover-back {
@@ -25,11 +36,11 @@
 
 .case-cover {
   backface-visibility: hidden;
-  z-index: 6;
+  z-index: 7;
 }
 
 .case-cover-back {
-  z-index: 5;
+  z-index: 6;
 }
 
 .case-cover.open,
