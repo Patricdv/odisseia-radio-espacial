@@ -2,8 +2,8 @@
   0% {
     color: var(--neon-off);
     text-shadow: var(--neon-off-glow);
-    border-top-color: black;
-    border-bottom-color: black;
+    border-top-color: #515455;
+    border-bottom-color: #515455;
   }
   30% {
     color: var(--neon-blue);
@@ -20,8 +20,8 @@
   96% {
     color: var(--neon-off);
     text-shadow: var(--neon-off-glow);
-    border-top-color: black;
-    border-bottom-color: black;
+    border-top-color: #515455;
+    border-bottom-color: #515455;
   }
   97% {
     color: var(--neon-blue);
@@ -32,8 +32,8 @@
   98% {
     color: var(--neon-off);
     text-shadow: var(--neon-off-glow);
-    border-top-color: black;
-    border-bottom-color: black;
+    border-top-color: #515455;
+    border-bottom-color: #515455;
   }
   99% {
     color: var(--neon-blue);
@@ -44,14 +44,14 @@
   100% {
     color: var(--neon-off);
     text-shadow: var(--neon-off-glow);
-    border-top-color: black;
-    border-bottom-color: black;
+    border-top-color: #515455;
+    border-bottom-color: #515455;
   }
 }
 
 @keyframes red-neon-sign {
   0% {
-    border-color: black;
+    border-color: #515455;
   }
   30% {
     border-color: red;
@@ -60,19 +60,19 @@
     border-color: red;
   }
   96% {
-    border-color: black;
+    border-color: #515455;
   }
   97% {
     border-color: red;
   }
   98% {
-    border-color: black;
+    border-color: #515455;
   }
   99% {
     border-color: red;
   }
   100% {
-    border-color: black;
+    border-color: #515455;
   }
 }
 
@@ -111,8 +111,8 @@
   letter-spacing: 3px;
   animation: blinking-neon ease-in-out 7s infinite alternate-reverse 0.25s;
   padding: 20px 0;
-  border-top: solid 4px black;
-  border-bottom: solid 4px black;
+  border-top: solid 4px #515455;
+  border-bottom: solid 4px #515455;
 }
 
 .section {
@@ -131,17 +131,6 @@
   padding: 25px 0 0;
   display: flex;
 }
-
-/* .casseteContainer ul li::after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-left: 8px solid rgba(110, 110, 110, 0.2);
-  border-right: 8px solid rgba(110, 110, 110, 0.2);
-  z-index: 2;
-} */
 
 .micContainer {
   width: 380px;

@@ -14,15 +14,15 @@
     transform: translate3d(0, 0, 0) rotateZ(90deg);
   }
   50% {
-    transform: translate3d(239px, -200px, 0) rotateZ(90deg);
+    transform: translate3d(239px, -200px, 0) rotateZ(45deg);
   }
   70% {
-    transform: translate3d(468px, -100px, 0) rotateZ(90deg);
+    transform: translate3d(468px, -100px, 0) rotateZ(0deg);
   }
   80% {
-    transform: translate3d(468px, -100px, 0) rotateZ(720deg);
+    transform: translate3d(468px, -100px, 0) rotateZ(-360deg);
   }
   100% {
-    transform: translate3d(468px, 25px, 0) rotateZ(720deg);
+    transform: translate3d(468px, 25px, 0) rotateZ(-360deg);
   }
 }
